@@ -4,8 +4,8 @@ const cors = require('cors')
 const route = require('./routes/routes.routes')
 const app = express()
 //CONFIGS
-const port = 9000
-app.set('port', process.env.port || port)
+
+app.set('port', process.env.port)
 
 //MIDDLEWARES
 app.use(express.json())
